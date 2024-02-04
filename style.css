@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.title-box {
+    width: 100%;
+    height: 55px;
+    background-color: rgb(86, 99, 112);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    text-align: center;
+}
+
+.alert-box {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    background-color: gold;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container {
+    width: 100%;
+    height: calc(100% - 55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.div-life{
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 4px;
+    font-weight: bold;
+    border-radius: 7px;
+    padding-top: 5px;
+}
+.life-value{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.life-2v{
+    font-size: 18px;
+}
+
+.contAllCont {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.user-input-box {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.input {
+    width: 100%;
+    height: 60px;
+    font-size: 27px;
+    padding: 10px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: bold;
+}
+
+.btn-box {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-div {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+}
+
+.btn {
+    width: 70px;
+    height: 100%;
+    background-color: rgb(56, 56, 56);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    user-select: none;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.backbtn{
+    width: 70px;
+    height: 100%;
+    background-color: rgb(56, 56, 56);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    user-select: none;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.Submit-Btn {
+    margin-top: 20px;
+    width: 60%;
+    height: 55px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: lightslategray;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: all ease-in-out;
+}
+
+.Submit-Btn:hover {
+    background-color: rgb(87, 99, 110);
+    color: white;
+}
+
+.Winner-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.imgbox {
+    margin-top: 40px;
+    width: 180px;
+    height: 180px;
+    background-color: bisque;
+}
+
+.Play-again {
+    margin-top: 20px;
+    width: 60%;
+    height: 55px;
+    font-size: 18px;
+    color: white;
+    background-color: lightslategray;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: all ease-in-out;
+}
+
+.Play-again:hover {
+    background-color: rgb(87, 99, 110);
+    color: white;
+}
+
+.win {
+    width: 100%;
+    height: 100%;
+}
+
+.Try-Box {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.try-again {
+    margin-top: 20px;
+    width: 60%;
+    height: 55px;
+    font-size: 18px;
+    color: white;
+    background-color: lightslategray;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: all ease-in-out;
+}
+
+.try-again:hover {
+    background-color: rgb(87, 99, 110);
+    color: white;
+}
+
+.name {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-color {
+    color: red;
+}
+
+.color-green {
+    color: green;
+}
+
+.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.bbttnn{
+    margin-top: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+button {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 9em;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Random Number</title>
+    <!-- CSS FILES -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- Title -->
+        <div class="title-box">
+            <h2>Guess Random Number</h2>
+        </div>
+
+        <!-- Alert Box -->
+        <div class="alert-box">
+            <p class="displayOutput"></p>
+        </div>
+
+        <!-- Container -->
+        <div class="container">
+            <!-- Contain all Container -->
+            <div class="contAllCont">
+
+                <!-- user-input-box -->
+                <div class="user-input-box  ">
+                    <!-- input -->
+                    <div class="input">
+                        <p>0 to 100</p>
+                    </div>
+
+                    <!-- button box -->
+                    <div class="btn-box">
+                        <div class="btn-div">
+                            <div class="btn1 btn">1</div>
+                            <div class="btn2 btn">2</div>
+                            <div class="btn3 btn">3</div>
+                        </div>
+                        <div class="btn-div">
+                            <div class="btn4 btn">4</div>
+                            <div class="btn5 btn">5</div>
+                            <div class="btn6 btn">6</div>
+                        </div>
+                        <div class="btn-div">
+                            <div class="btn7 btn">7</div>
+                            <div class="btn8 btn">8</div>
+                            <div class="btn9 btn">9</div>
+                        </div>
+                        <div class="btn-div">
+                            <div class="btn0 btn">0</div>
+                            <div class="btn0 backbtn"><i class="ri-delete-back-2-line"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Btn -->
+                    <button class="bbttnn" id="SubmitBTN"> Submit </button>
+                </div>
+
+
+                <!-- Winner Box -->
+                <div class="Winner-box ">
+                    <h1 class="color-green">Congratulation</h1>
+                    <h4>You are Winner</h4>
+                    <h4>{ Value is matched }</h4>
+                    <!-- Show Value -->
+                    <h2 class="Value"></h2>
+
+                    <!-- display img -->
+                    <div class="imgbox">
+                        <img src="./IMG/trophy.jpg" alt="" class="win">
+                    </div>
+
+                    <!-- TRY-AGAIN Btn -->
+                    <button class="bbttnn" id="playagain"> Play Again </button>
+                </div>
+
+
+                <!-- TRY_BOX -->
+                <div class="Try-Box">
+                    <!-- TRY-AGAIN Btn -->
+                    <div class="name">
+                        <h1 class="red-color">Game Over</h1>
+                        <h4>You Can Not Win</h4>
+                        <h4>Life is 10/10</h4>
+                    </div>
+
+                    <button class="bbttnn" id="tryAgain"> Try Again </button>
+                </div>
+
+            </div>
+
+           
+        </div>
+        <div class="div-life">
+            <h4>LIFE</h4>
+            <div class="life-value">
+                <p class="life-2v" id="clv">0</p>
+                <p class="life-2v"> / 10</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS Files -->
+    <script src="script.js"></script>
+</body>
+
+</html>
